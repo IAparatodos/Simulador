@@ -7,6 +7,15 @@ Mini herramienta web para calcular cuántas cajas de azulejos necesita un client
 - Metros cuadrados que cubre cada caja.
 - Cajas disponibles en stock.
 
+## Identidad visual
+
+La interfaz usa la paleta corporativa de Adrihosan:
+
+- Principal: `#4dd2d0`
+- Secundario: `#3f6f7b`
+- Oscuro: `#102e35`
+- Tipografía: `Poppins`, con fallback del sistema
+
 ## Estructura
 
 ```text
