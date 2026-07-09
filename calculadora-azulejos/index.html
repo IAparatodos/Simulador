@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de cajas de azulejos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator-wrapper">
+    <section class="calculator-card">
+      <div class="calculator-header">
+        <p class="eyebrow">Herramienta rápida</p>
+        <h1>Calculadora de cajas de azulejos</h1>
+        <p>
+          Calcula cuántas cajas necesita un cliente según los metros cuadrados,
+          la merma recomendada y el stock disponible.
+        </p>
+      </div>
+
+      <form id="tileCalculator" class="calculator-form">
+        <div class="form-group">
+          <label for="area">Metros cuadrados del proyecto</label>
+          <input
+            type="number"
+            id="area"
+            name="area"
+            min="0"
+            step="0.01"
+            placeholder="Ej. 20"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="waste">Merma recomendada (%)</label>
+          <input
+            type="number"
+            id="waste"
+            name="waste"
+            min="0"
+            step="1"
+            value="10"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="boxCoverage">Metros cuadrados por caja</label>
+          <input
+            type="number"
+            id="boxCoverage"
+            name="boxCoverage"
+            min="0"
+            step="0.01"
+            placeholder="Ej. 1.25"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="availableBoxes">Cajas disponibles</label>
+          <input
+            type="number"
+            id="availableBoxes"
+            name="availableBoxes"
+            min="0"
+            step="1"
+            placeholder="Ej. 25"
+            required
+          />
+        </div>
+
+        <button type="submit">Calcular cajas</button>
+      </form>
+
+      <section id="result" class="result hidden" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
